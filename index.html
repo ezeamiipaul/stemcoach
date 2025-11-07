@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="./Pics/logo.jpg" class="h-4 w-4" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@1,500&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+    h1 {
+        font-family: 'Outfit', sans-serif;
+        letter-spacing: -0.5px;
+    }
+    </style>
+
+
+  <title>STEM Coach International</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-[Outfit]">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-white backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 space-x-2 flex items-center justify-between">
+        <a href="index.html" 
+   class="flex items-center space-x-2 text-lg md:text-2xl font-[Outfit] font-semibold text-[#004745] tracking-tight">
+  <img src="./Pics/logo.jpg" alt="Logo" class="h-8 w-8 sm:h-10 sm:w-10 object-contain">
+  <span>STEM Coach International</span>
+</a>
+
+            
+
+      
+      <!-- Desktop Menu -->
+      <div style="font-family: 'Lora', serif;" class="hidden md:flex space-x-8 text-black text-lg font-medium">
+        <a href="#home" class="hover:text-primary transition">Home</a>
+        <a href="#about" class="hover:text-primary transition">About</a>
+        <a href="#services" class="hover:text-primary transition">Services</a>
+        <a href="#testimonials" class="hover:text-primary transition">Testimonials</a>
+        <a href="#contact" class="hover:text-primary transition">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button onclick="toggleMenu()" class="md:hidden text-gray-700 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div style="font-family: 'Lora', serif;" id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+      <div class="flex flex-col px-6 py-4 space-y-3 text-gray-700 font-medium">
+        <a href="#home" class="hover:text-primary transition">Home</a>
+        <a href="#about" class="hover:text-primary transition">About</a>
+        <a href="#services" class="hover:text-primary transition">Services</a>
+        <a href="#testimonials" class="hover:text-primary transition">Testimonials</a>
+        <a href="#contact" class="hover:text-primary transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+  </script>
+
+
+  <!-- Hero Section -->
+<!-- Hero Section -->
+<section id="home" class="relative w-full overflow-hidden">
+  <!-- Desktop Background -->
+  <div class="hidden md:block relative w-full h-[110vh] overflow-hidden z-0">
+    <img src="./Pics/bg.svg" alt="background" class="absolute inset-0 w-full h-full object-cover" />
+  </div>
+
+  <!-- Mobile Background -->
+  <div class="block sm:hidden relative w-full h-[100vh] overflow-hidden z-0">
+    <img src="./Pics/bg_mobile.svg" alt="mobile background" class="absolute inset-0 w-full h-full object-cover" />
+  </div>
+
+  <!-- Centered Content -->
+<div class="absolute inset-0 z-20 flex flex-col items-center text-center px-6 md:px-16 space-y-8 justify-center md:justify-start md:pt-[20vh]">
+  <h1 class="font-[Outfit] text-2xl md:text-4xl lg:text-7xl font-bold max-w-5xl md:mb-4">
+    Empowering <span style="font-family: 'Playfair Display', serif; font-style: italic;" class="text-[#004745] font-bold">Educators.</span><br>
+    Inspiring <span style="font-family: 'Playfair Display', serif; font-style: italic;" class="text-[#004745] font-bold">Learners.</span><br>
+    Advancing the <span style="font-family: 'Playfair Display', serif; font-style: italic;" class="text-[#004745] font-bold">Future.</span>
+  </h1>
+
+  <p style="font-family: 'Lora', serif;"
+     class="text-base sm:text-lg md:text-2xl text-gray-800 leading-relaxed max-w-5xl mb-4 font-medium">
+    We provide hands-on STEM curricula, lab consulting, and educator training that bridge theory and practice, preparing students for a future defined by innovation.
+  </p>
+
+<div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
+  <!-- Primary CTA -->
+  <a href="#core-services" 
+     class="px-8 py-3 bg-[#004745] text-white font-semibold rounded-lg hover:bg-[#92E3A9] transition shadow-md">
+    Our Core Services
+  </a>
+
+  <!-- Secondary CTA -->
+  <a href="#contact" 
+     class="px-8 py-3 bg-white text-[#004745] font-semibold rounded-lg border border-[#004745] hover:bg-[#92E3A9] hover:border-transparent hover:text-white transition-all duration-300 shadow-sm">
+    Contact Us
+  </a>
+</div>
+</div>
+</section>
+
+<!-- Mission, Vision & Value Proposition Section -->
+<!-- <section id="about" class="bg-white py-20 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto space-y-12">
+
+    Section Heading -->
+    <!-- <div>
+      <h2 class="font-[Outfit] text-3xl md:text-5xl font-bold text-[#004745] mb-4">
+        Our Mission, Vision & Value Proposition
+      </h2>
+      <p style="font-family: 'Lora', serif;" class="text-gray-700 text-lg md:text-xl max-w-3xl leading-relaxed">
+        At STEM Coach International, we’re shaping the next generation of innovators through hands-on, practical, and future-ready STEM learning experiences.
+      </p>
+    </div> -->
+
+
+<!-- Mission, Vision & Value Proposition Section (Centered) -->
+<section id="about" class="bg-white py-20 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto text-center space-y-12">
+
+    <!-- Section Heading -->
+    <div>
+      <h2 class="font-[Outfit] text-3xl md:text-5xl font-bold text-[#004745] mb-4">
+        Our Mission, Vision & Value Proposition
+      </h2>
+      <p style="font-family: 'Lora', serif;" class="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+        At STEM Coach International, we’re shaping the next generation of innovators through hands-on, practical, and future-ready STEM learning experiences.
+      </p>
+    </div>
+
+    
+    <!-- Cards Container -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
+
+      <!-- Mission -->
+      <div class="bg-gray-50 p-8 rounded-2xl shadow-sm transition text-left flex flex-col items-center space-y-4">
+        <img src="./Pics/mission.svg" alt="Mission Icon" class="h-14 w-14 mb-4">
+        <h3 class="font-[Outfit] text-2xl font-semibold text-[#004745]">Mission</h3>
+        <p style="font-family: 'Lora', serif;" class="text-gray-700 leading-relaxed">
+          To inspire the next generation of innovators by providing engaging, hands-on STEM experiences and empowering educational institutions with cutting-edge curricula and lab resources.
+        </p>
+      </div>
+
+      <!-- Vision -->
+      <div class="bg-gray-50 p-8 rounded-2xl shadow-sm transition text-left flex flex-col items-center space-y-4">
+        <img src="./Pics/vision.svg" alt="Vision Icon" class="h-14 w-14 mb-4">
+        <h3 class="font-[Outfit] text-2xl font-semibold text-[#004745]">Vision</h3>
+        <p style="font-family: 'Lora', serif;" class="text-gray-700 leading-relaxed">
+          To be a globally recognized leader in STEM education and curriculum development, fostering a world where every student has the curiosity and skills to solve future challenges.
+        </p>
+      </div>
+
+      <!-- Value Proposition -->
+      <div class="bg-gray-50 p-8 rounded-2xl shadow-sm transition text-left flex flex-col items-center space-y-4">
+        <img src="./Pics/value.svg" alt="Value Icon" class="h-14 w-14 mb-4">
+        <h3 class="font-[Outfit] text-2xl font-semibold text-[#004745]">Value Proposition</h3>
+        <p style="font-family: 'Lora', serif;" class="text-gray-700 leading-relaxed">
+          We bridge the gap between theory and practice through comprehensive, hands-on STEM programs — serving students from kindergarten through college and supporting the educators who teach them.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Target Audiences & Services Section -->
+<!-- <section id="services" class="bg-gray-50 py-20 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto text-center space-y-12"> -->
+
+    <!-- Section Heading -->
+    <!-- <div>
+      <h2 class="font-[Outfit] text-3xl md:text-5xl font-bold text-[#004745] mb-4">
+        Who We Serve
+      </h2>
+      <p style="font-family: 'Lora', serif;" class="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+        Our programs are designed for students, educators, and families who believe in the power of hands-on discovery and future-ready STEM learning.
+      </p>
+    </div> -->
+
+    <!-- Audience Cards -->
+    <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12"> -->
+
+      <!-- K–12 Students -->
+      <!-- <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+        <div class="flex flex-col items-center text-center space-y-4">
+          <div class="bg-[#004745]/10 p-4 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#004745]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422A12.042 12.042 0 0118 19H6a12.042 12.042 0 01-.16-8.422L12 14z" />
+            </svg>
+          </div>
+          <h3 class="font-[Outfit] text-2xl font-semibold text-[#004745]">K–12 Students</h3>
+          <p style="font-family: 'Lora', serif;" class="text-gray-700 leading-relaxed">
+            <span class="font-medium text-[#004745]">Learning by Doing.</span>  
+            We make science and math fun, relatable, and exciting through hands-on experiments, workshops, and after-school programs.
+          </p>
+        </div>
+      </div> -->
+
+      <!-- Schools & Colleges -->
+      <!-- <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+        <div class="flex flex-col items-center text-center space-y-4">
+          <div class="bg-[#004745]/10 p-4 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#004745]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.1 0-2 .9-2 2v8a2 2 0 002 2h6a2 2 0 002-2v-8a2 2 0 00-2-2h-6zM6 6v12a2 2 0 002 2h2V4H8a2 2 0 00-2 2z" />
+            </svg>
+          </div>
+          <h3 class="font-[Outfit] text-2xl font-semibold text-[#004745]">Schools & Colleges</h3>
+          <p style="font-family: 'Lora', serif;" class="text-gray-700 leading-relaxed">
+            <span class="font-medium text-[#004745]">Empowering Educators.</span>  
+            We design turnkey, scalable solutions for high-quality STEM programs — from lab setup consultation to teacher training and curriculum development.
+          </p>
+        </div>
+      </div> -->
+
+      <!-- Parents & Guardians -->
+      <!-- <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+        <div class="flex flex-col items-center text-center space-y-4">
+          <div class="bg-[#004745]/10 p-4 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#004745]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a5 5 0 00-10 0v2a5 5 0 00-10 0v2a5 5 0 0010 0V9a5 5 0 0010 0zM12 20v-8m6 8v-8m-12 8v-8" />
+            </svg>
+          </div>
+          <h3 class="font-[Outfit] text-2xl font-semibold text-[#004745]">Parents & Guardians</h3>
+          <p style="font-family: 'Lora', serif;" class="text-gray-700 leading-relaxed">
+            <span class="font-medium text-[#004745]">Personalized Excellence.</span>  
+            We offer one-on-one tutoring and individualized learning plans that boost student confidence, curiosity, and academic performance in STEM subjects.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section> -->
+
+<section id="services" class="bg-[#004745] text-white py-20 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+
+    <!-- Left: Image -->
+    <div class="hidden md:block relative">
+    <a href="https://storyset.com/education" target="_blank">
+        <img src="./Pics/serve.svg" alt="STEM lab" class="rounded-2xl object-cover w-full">
+    </a>
+      
+      <!-- <div class="absolute inset-0 bg-[#004745]/40 rounded-2xl"></div> -->
+    </div>
+
+    <!-- Right: Text -->
+    <div class="space-y-8 text-center md:text-left">
+      <h2 class="font-[Outfit] text-3xl md:text-5xl font-bold">
+        Who We Serve
+      </h2>
+      <p style="font-family: 'Lora', serif;" class="text-lg md:text-xl leading-relaxed text-gray-100">
+        Our impact extends across diverse audiences — from young explorers to educators shaping tomorrow’s innovators.
+      </p>
+
+      <div class="space-y-6">
+        <div>
+          <h3 class="font-[Outfit] text-2xl font-semibold text-[#FFC727]">K–12 Students</h3>
+          <p style="font-family: 'Lora', serif;" class="text-gray-100 leading-relaxed">
+            <span class="font-medium text-white">Learning by Doing.</span> Hands-on experiments and workshops that make science fun and relatable.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-[Outfit] text-2xl font-semibold text-[#FFC727]">Schools & Colleges</h3>
+          <p style="font-family: 'Lora', serif;" class="text-gray-100 leading-relaxed">
+            <span class="font-medium text-white">Empowering Educators.</span> Turnkey lab setup, teacher training, and curriculum innovation.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-[Outfit] text-2xl font-semibold text-[#FFC727]">Parents & Guardians</h3>
+          <p style="font-family: 'Lora', serif;" class="text-gray-100 leading-relaxed">
+            <span class="font-medium text-white">Personalized Excellence.</span> One-on-one STEM tutoring and customized learning plans for every child.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Core Services Section -->
+<section id="core-services" class="relative bg-gradient-to-b from-[#E9F7EF] to-white py-20 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto text-center space-y-12">
+
+    <!-- Section Heading -->
+    <div>
+      <h2 class="font-[Outfit] text-3xl md:text-5xl font-bold text-[#004745] mb-4">
+        Our Core Services
+      </h2>
+      <p style="font-family: 'Lora', serif;" class="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+        We deliver innovative, hands-on STEM solutions that empower learners, educators, and institutions — bridging the gap between theory and practice.
+      </p>
+    </div>
+
+    <!-- Services Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
+
+      <!-- K–12 Workshops -->
+      <div class="bg-white p-8 rounded-2xl shadow-sm hover:-translate-y-2 hover:shadow-sm transition-transform duration-300">
+        <div class="flex flex-col items-center space-y-4">
+          <img src="./Pics/robot.svg" alt="Mission Icon" class="h-14 w-14 mb-4">
+          <h3 class="font-[Outfit] text-2xl font-semibold text-[#004745]">K–12 Workshops & Programs</h3>
+          <p style="font-family: 'Lora', serif;" class="text-gray-700 leading-relaxed">
+            <span class="font-medium text-[#004745]">STEM Explorers (K–5)</span> and <span class="font-medium text-[#004745]">STEM Builders (6–12)</span> engage students through hands-on experiments, robotics, and creative discovery.
+          </p>
+          <a href="#contact" class="mt-4 inline-block px-6 py-2 text-[#004745] font-semibold border border-[#004745] rounded-lg hover:bg-[#004745] hover:text-white transition-all duration-300">
+            Contact Us
+          </a>
+        </div>
+      </div>
+
+      <!-- School & College Consulting -->
+      <div class="bg-white p-8 rounded-2xl shadow-sm hover:-translate-y-2 hover:shadow-sm transition-transform duration-300">
+        <div class="flex flex-col items-center space-y-4">
+          <img src="./Pics/curriculum.svg" alt="Mission Icon" class="h-14 w-14 mb-4">
+          <h3 class="font-[Outfit] text-2xl font-semibold text-[#004745]">School & College Consulting</h3>
+          <p style="font-family: 'Lora', serif;" class="text-gray-700 leading-relaxed">
+            <span class="font-medium text-[#004745]">Lab Blueprint</span> and <span class="font-medium text-[#004745]">Curriculum Catalyst</span> help institutions set up state-of-the-art STEM labs and develop impactful, scalable curricula.
+          </p>
+          <p class="text-[#004745] italic text-sm mt-2">*Free for developing nations</p>
+          <a href="#contact" class="mt-4 inline-block px-6 py-2 text-[#004745] font-semibold border border-[#004745] rounded-lg hover:bg-[#004745] hover:text-white transition-all duration-300">
+            Contact Us
+          </a>
+        </div>
+      </div>
+
+      <!-- Personal Tutoring -->
+      <div class="bg-white p-8 rounded-2xl shadow-sm hover:-translate-y-2 hover:shadow-sm transition-transform duration-300">
+        <div class="flex flex-col items-center space-y-4">
+          <img src="./Pics/tutor.svg" alt="Mission Icon" class="h-14 w-14 mb-4">
+          <h3 class="font-[Outfit] text-2xl font-semibold text-[#004745]">Personal Tutoring & Admission Coaching</h3>
+          <p style="font-family: 'Lora', serif;" class="text-gray-700 leading-relaxed">
+            <span class="font-medium text-[#004745]">STEM One-on-One</span> and <span class="font-medium text-[#004745]">Master Coach Tutoring</span> offer personalized mentorship and master classes for fully funded scholarship success.
+          </p>
+          <a href="#contact" class="mt-4 inline-block px-6 py-2 text-[#004745] font-semibold border border-[#004745] rounded-lg hover:bg-[#004745] hover:text-white transition-all duration-300">
+            Contact Us
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- <div class="w-full border-t border-[#004745]/10"></div> -->
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="bg-white py-12 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+    <!-- Right Column (Image) -->
+    <div class="hidden md:block">
+      <img src="./Pics/message.svg" alt="Students collaborating in STEM lab" class="w-full h-auto object-contain">
+    </div>
+
+    <!-- Left Column (Text + Testimonial Cards) -->
+    <div class="space-y-10">
+      <!-- Section Heading -->
+      <div class="text-center md:text-left">
+        <h2 class="font-[Outfit] text-3xl md:text-5xl font-bold text-[#004745] mb-4">
+          What People Are Saying
+        </h2>
+        <p style="font-family: 'Lora', serif;" class="text-gray-700 text-lg md:text-xl leading-relaxed max-w-2xl">
+          Hear from the educators, parents, and students whose lives have been transformed by our hands-on STEM experiences.
+        </p>
+      </div>
+
+      <!-- Testimonial Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 grid-rows-2 gap-4 md:grid-cols-2 md:grid-rows-2">
+
+        <!-- Card 1 -->
+        <div class="bg-gray-50 p-6 md:p-8 rounded-2xl shadow-sm flex flex-col justify-between h-[220px] sm:h-auto">
+          <p style="font-family:'Lora',serif" class="text-gray-700 leading-relaxed mb-4">
+            “STEM Coach International completely changed the way our students think about science. The workshops are fun, interactive, and incredibly inspiring!”
+          </p>
+          <div>
+            <h4 class="font-[Outfit] font-semibold text-[#004745]">— Dr. Emily Carter</h4>
+            <p class="text-gray-500 text-sm">Principal, Greenhill Elementary</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-gray-50 p-6 md:p-8 rounded-2xl shadow-sm flex flex-col justify-between h-[220px] sm:h-auto">
+          <p style="font-family:'Lora',serif" class="text-gray-700 leading-relaxed mb-4">
+            “As a parent, I’ve never seen my child this excited about math and science.”
+          </p>
+          <div>
+            <h4 class="font-[Outfit] font-semibold text-[#004745]">— Sarah Johnson</h4>
+            <p class="text-gray-500 text-sm">Parent, Atlanta, GA</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-gray-50 p-6 md:p-8 rounded-2xl shadow-sm flex flex-col justify-between h-[220px] sm:h-auto">
+          <p style="font-family:'Lora',serif" class="text-gray-700 leading-relaxed mb-4">
+            “The personalized tutoring program helped my son gain confidence in math — we’re grateful for their support!”
+          </p>
+          <div>
+            <h4 class="font-[Outfit] font-semibold text-[#004745]">— Maria Gomez</h4>
+            <p class="text-gray-500 text-sm">Parent, Houston, TX</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-gray-50 p-6 md:p-8 rounded-2xl shadow-sm flex flex-col justify-between h-[220px] sm:h-auto">
+          <p style="font-family:'Lora',serif" class="text-gray-700 leading-relaxed mb-4">
+            “Our institution partnered with STEM Coach International to redesign our lab curriculum. The results have been phenomenal — highly recommended!”
+          </p>
+          <div>
+            <h4 class="font-[Outfit] font-semibold text-[#004745]">— Prof. Daniel Mensah</h4>
+            <p class="text-gray-500 text-sm">STEM Department Head, TechBridge College</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Call to Action Section (Patterned Background) -->
+<section id="cta" class="relative w-full overflow-hidden py-20 px-6 md:px-16">
+  
+  <!-- Background Image -->
+  <div class="absolute inset-0 z-0">
+    <img src="./Pics/bg_small.svg" alt="patterned background" class="hidden md:block w-full h-full object-cover" />
+    <img src="./Pics/bg_small_mobile.svg" alt="patterned background" class="block md:hidden w-full h-full object-cover" />
+    <!-- <div class="absolute inset-0 bg-white/80"></div> overlay for readability -->
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-7xl mx-auto text-center space-y-12">
+    
+    <!-- Section Heading -->
+    <div>
+      <h2 class="font-[Outfit] text-3xl md:text-5xl font-bold text-[#004745] mb-4">
+        Ready to Take the Next Step?
+      </h2>
+      <p style="font-family: 'Lora', serif;" class="text-[#004745] text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+        Whether you're a parent, educator, or lifelong learner, STEM Coach International is here to help you spark innovation and discovery.
+      </p>
+    </div>
+
+    <!-- CTA Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+
+      <!-- Parents CTA -->
+      <div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl border border-[#004745]/30 hover:border-[#004745] hover:shadow-md transition-all duration-300">
+        <h3 class="font-[Outfit] text-2xl font-semibold text-[#004745] mb-4">For Parents</h3>
+        <p style="font-family: 'Lora', serif;" class="text-[#004745] leading-relaxed mb-6">
+          Schedule a free STEM consultation for your child today and watch their curiosity take flight.
+        </p>
+        <a href="#contact" class="inline-block px-6 py-3 border border-[#004745] text-[#004745] font-semibold rounded-lg hover:bg-[#004745] hover:text-white transition-all duration-300">
+          Book a Free Session
+        </a>
+      </div>
+
+      <!-- Schools CTA -->
+      <div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl border border-[#004745]/30 hover:border-[#004745] hover:shadow-md transition-all duration-300">
+        <h3 class="font-[Outfit] text-2xl font-semibold text-[#004745] mb-4">For Schools & Colleges</h3>
+        <p style="font-family: 'Lora', serif;" class="text-[#004745] leading-relaxed mb-6">
+          Let us design your future-ready lab. </br>Contact us today for a Curriculum Catalyst overview.
+        </p>
+        <a href="#contact" class="inline-block px-6 py-3 border border-[#004745] text-[#004745] font-semibold rounded-lg hover:bg-[#004745] hover:text-white transition-all duration-300">
+          Get Started
+        </a>
+      </div>
+
+      <!-- General Public CTA -->
+      <div class="bg-white/70 backdrop-blur-sm p-8 rounded-2xl border border-[#004745]/30 hover:border-[#004745] hover:shadow-md transition-all duration-300">
+        <h3 class="font-[Outfit] text-2xl font-semibold text-[#004745] mb-4">For Everyone</h3>
+        <p style="font-family: 'Lora', serif;" class="text-[#004745] leading-relaxed mb-6">
+          Discover the difference hands-on learning can make. Explore our workshops and programs.
+        </p>
+        <a href="#services" class="inline-block px-6 py-3 border border-[#004745] text-[#004745] font-semibold rounded-lg hover:bg-[#004745] hover:text-white transition-all duration-300">
+          Explore Programs
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Our Lead Coaches Section -->
+<section id="contact" class="relative bg-gradient-to-b from-white to-[#E9F7EF]/50 py-20 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto text-center space-y-12">
+
+    <!-- Section Heading -->
+    <div>
+      <h2 class="font-[Outfit] text-3xl md:text-5xl font-bold text-[#004745] mb-4">
+        Our Lead Coaches
+      </h2>
+      <p style="font-family: 'Lora', serif;" 
+         class="text-gray-700 text-lg md:text-xl max-w-3xl leading-relaxed mx-auto">
+        Meet the passionate educators behind STEM Coach International — experts dedicated to shaping the next generation of global innovators.
+      </p>
+    </div>
+
+
+    <!-- Coaches List -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 mt-10">
+
+    <!-- Coach 1 -->
+    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-5 bg-white rounded-2xl shadow-sm p-6 md:p-8 hover:-translate-y-1 transition-all duration-300">
+      <div class="h-24 w-24 md:h-20 md:w-20 rounded-full overflow-hidden border border-[#004745]/20 bg-[#F7FAF8]">
+        <img src="./Pics/bunmi.jpg" 
+            alt="Dr. Oluwabunmi Peace Femi-Oloye" 
+            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+      </div>
+      <div class="text-center sm:text-left">
+        <h3 class="font-[Outfit] text-xl md:text-2xl font-semibold text-[#004745]">
+          Dr. Oluwabunmi Peace Femi-Oloye
+        </h3>
+        <p style="font-family: 'Lora', serif;" class="text-gray-600 text-sm md:text-base italic">
+          Head Coach, Biology & Microbiology
+        </p>
+        <a href="mailto:oluyedeoluwabunmi@yahoo.com" class="text-[#004745] font-medium hover:text-[#00BFA6] transition">
+          oluyedeoluwabunmi@yahoo.com
+        </a>
+      </div>
+    </div>
+
+    <!-- Coach 2 -->
+    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-5 bg-white rounded-2xl shadow-sm p-6 md:p-8 hover:-translate-y-1 transition-all duration-300">
+      <div class="h-24 w-24 md:h-20 md:w-20 rounded-full overflow-hidden border border-[#004745]/20 bg-[#F7FAF8]">
+        <img src="./Pics/femi.jpg" 
+            alt="Dr. Francis Femi Oloye" 
+            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+      </div>
+      <div class="text-center sm:text-left">
+        <h3 class="font-[Outfit] text-xl md:text-2xl font-semibold text-[#004745]">
+          Dr. Francis Femi Oloye
+        </h3>
+        <p style="font-family: 'Lora', serif;" class="text-gray-600 text-sm md:text-base italic">
+          Head Coach, Chemistry, Physics & Mathematics
+        </p>
+        <div>
+        <a href="mailto:pen2crown@yahoo.com" class="text-[#004745] font-medium hover:text-[#00BFA6] transition">
+          pen2crown@yahoo.com
+        </a>
+        </div>
+
+      </div>
+    </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Footer -->
+<footer class="bg-[#004745] text-white py-12 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 text-center md:text-left">
+
+    <!-- About -->
+    <div>
+      <h3 class="font-[Outfit] text-2xl font-semibold mb-4">STEM Coach International</h3>
+      <p style="font-family: 'Lora', serif;" class="text-gray-100 leading-relaxed">
+        Inspiring the next generation of innovators through hands-on STEM learning and global collaboration.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="font-[Outfit] text-xl font-semibold mb-4">Quick Links</h4>
+      <ul class="space-y-2 text-gray-100">
+        <li><a href="#home" class="hover:text-[#92E3A9] transition">Home</a></li>
+        <li><a href="#about" class="hover:text-[#92E3A9] transition">About</a></li>
+        <li><a href="#services" class="hover:text-[#92E3A9] transition">Services</a></li>
+        <li><a href="#testimonials" class="hover:text-[#92E3A9] transition">Testimonials</a></li>
+        <li><a href="#contact" class="hover:text-[#92E3A9] transition">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+  <!-- Footer Bottom -->
+  <div class="border-t border-gray-600 mt-10 pt-6 text-center text-sm text-gray-300">
+    <p>© 2025 STEM Coach International. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>
